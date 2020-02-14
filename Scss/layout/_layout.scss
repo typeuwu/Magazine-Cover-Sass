@@ -1,0 +1,144 @@
+/*-------------------------------------------*\
+
+            $LAYOUT
+
+\*--------------------------------------------*/
+/**/
+*{
+    box-sizing: border-box;
+}
+.container {
+    position: relative;
+    display: block;
+    background-image: url(" https://media.meltystyle.fr/article-3297258-ajust_930-f4990049/jaden-smith-pour-l-edition-ss16-de-gq-style.jpg");
+        background-color: $color-lightgrey;
+        height: 894px;
+        width: 660px;
+        margin: 30px auto;
+        color: $color-white;
+        overflow: hidden;
+    }
+    .lower{
+        font-family: $font-low;
+        display: flex;
+        flex-flow: $row-wrap;
+        font-size: 26px;
+    }
+    .up-left{
+        flex-basis: 155px;
+        padding-left: 24px;
+        margin-top: -45px;
+        color: $color-purple; 
+        p{
+            margin-top: 3px;
+            text-transform: uppercase;
+            &.uk{
+                margin-top: -23px;
+                margin-bottom: 20px;
+                font-size: 10px;
+                letter-spacing: -1px;
+            }
+        }
+        h2{
+            margin-top: -9px;
+            span{
+                font-size: 63px;
+                letter-spacing: -3px;
+                line-height: 37px;
+            }
+        }
+        h4{
+            span:last-of-type{
+                padding-top: 11px;
+                font-size: 12px;
+            }
+        }    
+    }
+
+    .up-right{
+        flex-basis: 350px;
+        padding-left: 230px;
+        h3{
+            margin-top: -35px;
+            font-size: 64px;
+        }
+    }
+
+    .low-left{
+        position: absolute;
+        flex-basis: 150px;
+        padding-right: 500px;
+        height: 345px;
+        h4{
+            &.block-text{
+                margin-top: 450px;
+                padding-left: 24px;
+            }
+        }
+    }
+
+    .low-right{
+        position: absolute;
+        flex-basis: 460px;
+        padding-left: 210px;
+        bottom: 34px;
+        h4{
+            &.block-text{
+                width: auto;
+            }
+            &.block-text:nth-of-type(1){
+                margin-top: 15px;
+                margin-bottom: 10px;
+
+                span:first-of-type{
+                    transform: rotate(-1deg);
+                    margin-left: 206px;
+                }
+                span:last-of-type{
+                    transform: rotate(4deg);
+                    margin-top: 11px;
+                    margin-left: 210px;
+                }
+            }
+            &.block-text:nth-of-type(2){
+                transform: rotate(-17deg);
+                margin-left: 60px;
+            }
+            &.block-text:nth-of-type(3){
+                transform: rotate(5deg);
+                margin-left: 250px;
+                margin-bottom: 40px;
+            }
+            &.block-text:nth-of-type(4){
+                transform: rotate(-6deg);
+                margin-left: 75px;
+            }
+        }
+    }
+
+
+h4{
+    &.block-text{
+        display: flex;
+        flex-flow: $row-wrap;
+        width: 100px;
+        span{
+            display: block;
+            margin-right: 5px;
+            margin-bottom: 1px;
+            padding: 1px 5px 0px;
+        }
+    }
+    &.black{
+        span{
+            background-color: $color-purple;
+            color: $color-white;
+        }
+    }
+    &.white{
+        span{
+            background-color: $color-white;
+            color: $color-purple;
+        }
+    }
+}

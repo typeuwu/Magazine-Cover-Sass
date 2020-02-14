@@ -1,0 +1,72 @@
+/*-------------------------------------------*\
+
+            $TYPOGRAPHY
+
+\*--------------------------------------------*/
+/**/
+
+h1{
+    position: relative;
+    left: -12px;
+    .pre{
+        font-family: $font-title;
+        font-weight: 900;
+        position: absolute;
+        color: $color-darkpurple;
+        top: 75px;
+        left: 95px;
+        font-size: 12px;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+    .pre::before{
+        content: "";
+        position: absolute;
+        background-color: $color-white;
+        height: 59px;
+        width: 35px;
+        left: 37px;
+        top: -8px;
+        border-radius : 14px 0px 0px 31px;
+        z-index: -1;
+    }
+    .logo{
+        font-family: $font-title;
+        font-weight: 900;
+        position: relative;
+        font-size: 220px;
+        letter-spacing: -30px;
+        line-height: 150px;
+        -webkit-text-stroke: $text-stroke_purple;
+        color: $color-white;
+    }
+    .title{
+        font-family: $font-subtitle;
+        color:$color-darkpurple;
+        -webkit-text-stroke: $text-stroke_white;
+        font-size: 140px;
+        margin-left: 45px;
+    }
+}
+h2{
+    &.subtitle{
+        font-family: $font-title;
+        position: absolute;
+        left: 48%;
+        top: 27px;
+        font-size: 19px;
+        letter-spacing: -1px;
+        font-style: italic;
+        color: rgb(18, 5, 49);
+        -webkit-text-stroke: $text-stroke_white;
+    }
+}
+
+.up-left{
+    p{
+        &.gq{
+            font-family: $font-title;
+            font-size: 8px;
+        }
+    }
+}

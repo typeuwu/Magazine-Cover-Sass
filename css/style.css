@@ -1,0 +1,206 @@
+/*-------------------------------------------*\
+
+            $COLORS
+
+\*--------------------------------------------*/
+/* */
+/*-------------------------------------------*\
+
+            $TYPOGRAPHY
+
+\*--------------------------------------------*/
+/**/
+h1 {
+  position: relative;
+  left: -12px;
+}
+h1 .pre {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  color: #120531;
+  top: 75px;
+  left: 95px;
+  font-size: 12px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+h1 .pre::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 59px;
+  width: 35px;
+  left: 37px;
+  top: -8px;
+  border-radius: 14px 0px 0px 31px;
+  z-index: -1;
+}
+h1 .logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+  position: relative;
+  font-size: 220px;
+  letter-spacing: -30px;
+  line-height: 150px;
+  -webkit-text-stroke: 3px #120531;
+  color: white;
+}
+h1 .title {
+  font-family: "Sumana", serif;
+  color: #120531;
+  -webkit-text-stroke: 1px white;
+  font-size: 140px;
+  margin-left: 45px;
+}
+
+h2.subtitle {
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  left: 48%;
+  top: 27px;
+  font-size: 19px;
+  letter-spacing: -1px;
+  font-style: italic;
+  color: #120531;
+  -webkit-text-stroke: 1px white;
+}
+
+.up-left p.gq {
+  font-family: "Raleway", sans-serif;
+  font-size: 8px;
+}
+
+/*-------------------------------------------*\
+
+            $LAYOUT
+
+\*--------------------------------------------*/
+/**/
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: block;
+  background-image: url(" https://media.meltystyle.fr/article-3297258-ajust_930-f4990049/jaden-smith-pour-l-edition-ss16-de-gq-style.jpg");
+  background-color: #a8bab2;
+  height: 894px;
+  width: 660px;
+  margin: 30px auto;
+  color: white;
+  overflow: hidden;
+}
+
+.lower {
+  font-family: "Rozha One", serif;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 26px;
+}
+
+.up-left {
+  flex-basis: 155px;
+  padding-left: 24px;
+  margin-top: -45px;
+  color: #1c0f3c;
+}
+.up-left p {
+  margin-top: 3px;
+  text-transform: uppercase;
+}
+.up-left p.uk {
+  margin-top: -23px;
+  margin-bottom: 20px;
+  font-size: 10px;
+  letter-spacing: -1px;
+}
+.up-left h2 {
+  margin-top: -9px;
+}
+.up-left h2 span {
+  font-size: 63px;
+  letter-spacing: -3px;
+  line-height: 37px;
+}
+.up-left h4 span:last-of-type {
+  padding-top: 11px;
+  font-size: 12px;
+}
+
+.up-right {
+  flex-basis: 350px;
+  padding-left: 230px;
+}
+.up-right h3 {
+  margin-top: -35px;
+  font-size: 64px;
+}
+
+.low-left {
+  position: absolute;
+  flex-basis: 150px;
+  padding-right: 500px;
+  height: 345px;
+}
+.low-left h4.block-text {
+  margin-top: 450px;
+  padding-left: 24px;
+}
+
+.low-right {
+  position: absolute;
+  flex-basis: 460px;
+  padding-left: 210px;
+  bottom: 34px;
+}
+.low-right h4.block-text {
+  width: auto;
+}
+.low-right h4.block-text:nth-of-type(1) {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.low-right h4.block-text:nth-of-type(1) span:first-of-type {
+  transform: rotate(-1deg);
+  margin-left: 206px;
+}
+.low-right h4.block-text:nth-of-type(1) span:last-of-type {
+  transform: rotate(4deg);
+  margin-top: 11px;
+  margin-left: 210px;
+}
+.low-right h4.block-text:nth-of-type(2) {
+  transform: rotate(-17deg);
+  margin-left: 60px;
+}
+.low-right h4.block-text:nth-of-type(3) {
+  transform: rotate(5deg);
+  margin-left: 250px;
+  margin-bottom: 40px;
+}
+.low-right h4.block-text:nth-of-type(4) {
+  transform: rotate(-6deg);
+  margin-left: 75px;
+}
+
+h4.block-text {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100px;
+}
+h4.block-text span {
+  display: block;
+  margin-right: 5px;
+  margin-bottom: 1px;
+  padding: 1px 5px 0px;
+}
+h4.black span {
+  background-color: #1c0f3c;
+  color: white;
+}
+h4.white span {
+  background-color: white;
+  color: #1c0f3c;
+}
